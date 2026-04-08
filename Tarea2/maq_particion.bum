@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1775657011273" org.eventb.texttools.text_representation="machine maq_particion&#10;&#10;sees ctx_particion&#10;&#10;variables&#10;    i&#10;    pos&#10;    neg&#10;    t1&#10;    t2&#10;&#10;invariants&#10;    @inv1  i ∈ 0‥n&#10;&#10;    @inv2  pos ∈ 0‥n&#10;    @inv3  neg ∈ 0‥n&#10;&#10;    /* cantidad procesada */&#10;    @inv4  pos + neg = i&#10;&#10;    /* arreglos parciales */&#10;    @inv5  t1 ∈ 1‥n ⇸ ℤ&#10;    @inv6  t2 ∈ 1‥n ⇸ ℤ&#10;&#10;    /* dominios usados */&#10;    @inv7  pos = 0 ⇒ dom(t1) = ∅&#10;    @inv8  pos &gt; 0 ⇒ dom(t1) = 1‥pos&#10;&#10;    @inv9  neg = 0 ⇒ dom(t2) = ∅&#10;    @inv10 neg &gt; 0 ⇒ dom(t2) = 1‥neg&#10;&#10;    /* en las primeras posiciones de t1 solo hay no negativos */&#10;    @inv11 ∀k · k ∈ dom(t1) ⇒ t1(k) ≥ 0&#10;&#10;    /* en las primeras posiciones de t2 solo hay negativos */&#10;    @inv12 ∀k · k ∈ dom(t2) ⇒ t2(k) &lt; 0&#10;&#10;variant&#10;    n − i&#10;&#10;events&#10;&#10;    event INITIALISATION&#10;    then&#10;        @act1  i ≔ 0&#10;        @act2  pos ≔ 0&#10;        @act3  neg ≔ 0&#10;        @act4  t1 ≔ ∅&#10;        @act5  t2 ≔ ∅&#10;    end&#10;&#10;    event guardar_no_negativo&#10;    where&#10;        @grd1  i &lt; n&#10;        @grd2  t(i+1) ≥ 0&#10;    then&#10;        @act1  t1 ≔ t1 ∪ { (pos+1) ↦ t(i+1) }&#10;        @act2  pos ≔ pos + 1&#10;        @act3  i ≔ i + 1&#10;    end&#10;&#10;    event guardar_negativo&#10;    where&#10;        @grd1  i &lt; n&#10;        @grd2  t(i+1) &lt; 0&#10;    then&#10;        @act1  t2 ≔ t2 ∪ { (neg+1) ↦ t(i+1) }&#10;        @act2  neg ≔ neg + 1&#10;        @act3  i ≔ i + 1&#10;    end&#10;&#10;end" version="5">
+    <org.eventb.core.seesContext name="_pW2TgDNTEfGgR688KObguw" org.eventb.core.target="ctx_particion"/>
+    <org.eventb.core.variable name="_pW2TgTNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.identifier="i"/>
+    <org.eventb.core.variable name="_pW26kDNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.identifier="pos"/>
+    <org.eventb.core.variable name="_pW26kTNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.identifier="neg"/>
+    <org.eventb.core.variable name="_pW26kjNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.identifier="t1"/>
+    <org.eventb.core.variable name="_pW26kzNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.identifier="t2"/>
+    <org.eventb.core.invariant name="_pW26lDNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="inv1" org.eventb.core.predicate="i ∈ 0‥n"/>
+    <org.eventb.core.invariant name="_pW26lTNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="inv2" org.eventb.core.predicate="pos ∈ 0‥n"/>
+    <org.eventb.core.invariant name="_pW26ljNTEfGgR688KObguw" org.eventb.core.comment="cantidad procesada " org.eventb.core.generated="false" org.eventb.core.label="inv3" org.eventb.core.predicate="neg ∈ 0‥n"/>
+    <org.eventb.core.invariant name="_pW3hoDNTEfGgR688KObguw" org.eventb.core.comment="arreglos parciales " org.eventb.core.generated="false" org.eventb.core.label="inv4" org.eventb.core.predicate="pos + neg = i"/>
+    <org.eventb.core.invariant name="_pW3hoTNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="inv5" org.eventb.core.predicate="t1 ∈ 1‥n ⇸ ℤ"/>
+    <org.eventb.core.invariant name="_pW3hojNTEfGgR688KObguw" org.eventb.core.comment="dominios usados " org.eventb.core.generated="false" org.eventb.core.label="inv6" org.eventb.core.predicate="t2 ∈ 1‥n ⇸ ℤ"/>
+    <org.eventb.core.invariant name="_pW3hozNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="inv7" org.eventb.core.predicate="pos = 0 ⇒ dom(t1) = ∅"/>
+    <org.eventb.core.invariant name="_pW3hpDNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="inv8" org.eventb.core.predicate="pos &gt; 0 ⇒ dom(t1) = 1‥pos"/>
+    <org.eventb.core.invariant name="_pW4IsDNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="inv9" org.eventb.core.predicate="neg = 0 ⇒ dom(t2) = ∅"/>
+    <org.eventb.core.invariant name="_pW4IsTNTEfGgR688KObguw" org.eventb.core.comment="en las primeras posiciones de t1 solo hay no negativos " org.eventb.core.generated="false" org.eventb.core.label="inv10" org.eventb.core.predicate="neg &gt; 0 ⇒ dom(t2) = 1‥neg"/>
+    <org.eventb.core.invariant name="_pW4IsjNTEfGgR688KObguw" org.eventb.core.comment="en las primeras posiciones de t2 solo hay negativos " org.eventb.core.generated="false" org.eventb.core.label="inv11" org.eventb.core.predicate="∀k · k ∈ dom(t1) ⇒ t1(k) ≥ 0"/>
+    <org.eventb.core.invariant name="_pW4IszNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="inv12" org.eventb.core.predicate="∀k · k ∈ dom(t2) ⇒ t2(k) &lt; 0"/>
+    <org.eventb.core.variant name="_pW4vwDNTEfGgR688KObguw" org.eventb.core.expression="n − i" org.eventb.core.generated="false" org.eventb.emf.persistence.variant_label="vrn"/>
+    <org.eventb.core.event name="_uYLfYDNTEfGgR688KObguw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="_pW5W0DNTEfGgR688KObguw" org.eventb.core.assignment="i ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_pW5W0TNTEfGgR688KObguw" org.eventb.core.assignment="pos ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_pW5W0jNTEfGgR688KObguw" org.eventb.core.assignment="neg ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="_pW5W0zNTEfGgR688KObguw" org.eventb.core.assignment="t1 ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="_pW5W1DNTEfGgR688KObguw" org.eventb.core.assignment="t2 ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="act5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_pW5W1TNTEfGgR688KObguw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="guardar_no_negativo">
+        <org.eventb.core.guard name="_pW5W1jNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="i &lt; n"/>
+        <org.eventb.core.guard name="_pW594DNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="t(i+1) ≥ 0"/>
+        <org.eventb.core.action name="_pW594TNTEfGgR688KObguw" org.eventb.core.assignment="t1 ≔ t1 ∪ { (pos+1) ↦ t(i+1) }" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_pW594jNTEfGgR688KObguw" org.eventb.core.assignment="pos ≔ pos + 1" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_pW594zNTEfGgR688KObguw" org.eventb.core.assignment="i ≔ i + 1" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_pW595DNTEfGgR688KObguw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="guardar_negativo">
+        <org.eventb.core.guard name="_pW6k8DNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="i &lt; n"/>
+        <org.eventb.core.guard name="_pW6k8TNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="t(i+1) &lt; 0"/>
+        <org.eventb.core.action name="_pW6k8jNTEfGgR688KObguw" org.eventb.core.assignment="t2 ≔ t2 ∪ { (neg+1) ↦ t(i+1) }" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_pW6k8zNTEfGgR688KObguw" org.eventb.core.assignment="neg ≔ neg + 1" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="_pW6k9DNTEfGgR688KObguw" org.eventb.core.assignment="i ≔ i + 1" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

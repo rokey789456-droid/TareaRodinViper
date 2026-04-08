@@ -1,0 +1,33 @@
+method particionar(t: Seq[Int]) returns (t1: Seq[Int], t2: Seq[Int])
+    requires |t| > 0
+
+    ensures forall i: Int :: 0 <= i && i < |t1| ==> t1[i] >= 0
+    ensures forall i: Int :: 0 <= i && i < |t2| ==> t2[i] < 0
+
+{
+    var i: Int := 0
+    var pos: Int := 0
+    var neg: Int := 0
+
+    t1 := Seq()
+    t2 := Seq()
+
+    while (i < |t|)
+        invariant 0 <= i && i <= |t|
+        invariant pos + neg == i
+        invariant |t1| == pos
+        invariant |t2| == neg
+        invariant forall k: Int :: 0 <= k && k < |t1| ==> t1[k] >= 0
+        invariant forall k: Int :: 0 <= k && k < |t2| ==> t2[k] < 0
+    {
+        if (t[i] >= 0) {
+            t1 := t1 ++ Seq(t[i])
+            pos := pos + 1
+        } else {
+            t2 := t2 ++ Seq(t[i])
+            neg := neg + 1
+        }
+
+        i := i + 1
+    }
+}

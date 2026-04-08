@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/Tarea2/ctx_particion.buc|org.eventb.core.contextFile#ctx_particion|org.eventb.core.axiom#_nzjUwjNTEfGgR688KObguw" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="(" org.eventb.core.label="ax2" org.eventb.core.predicate="t∈1 ‥ n → ℤ" org.eventb.core.source="/Tarea2/ctx_particion.buc|org.eventb.core.contextFile#ctx_particion|org.eventb.core.axiom#_nzj70DNTEfGgR688KObguw" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scConstant name="n" org.eventb.core.source="/Tarea2/ctx_particion.buc|org.eventb.core.contextFile#ctx_particion|org.eventb.core.constant#_nzjUwDNTEfGgR688KObguw" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scConstant name="t" org.eventb.core.source="/Tarea2/ctx_particion.buc|org.eventb.core.contextFile#ctx_particion|org.eventb.core.constant#_nzjUwTNTEfGgR688KObguw" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.scContextFile>

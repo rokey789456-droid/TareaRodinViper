@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1775656967178" org.eventb.texttools.text_representation="context ctx_particion&#10;&#10;constants&#10;    n&#10;    t&#10;&#10;axioms&#10;    @ax1  n ∈ ℕ1&#10;&#10;    /* t: arreglo original de tamaño n */&#10;    @ax2  t ∈ 1‥n → ℤ&#10;&#10;end" version="3">
+    <org.eventb.core.constant name="_nzjUwDNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.identifier="n"/>
+    <org.eventb.core.constant name="_nzjUwTNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.identifier="t"/>
+    <org.eventb.core.axiom name="_nzjUwjNTEfGgR688KObguw" org.eventb.core.comment="t: arreglo original de tamaño n " org.eventb.core.generated="false" org.eventb.core.label="ax1" org.eventb.core.predicate="n ∈ ℕ1"/>
+    <org.eventb.core.axiom name="_nzj70DNTEfGgR688KObguw" org.eventb.core.generated="false" org.eventb.core.label="ax2" org.eventb.core.predicate="t ∈ 1‥n → ℤ"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="t" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+        <org.eventb.core.poPredicate name="u" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/Tarea2/ctx_particion.buc|org.eventb.core.contextFile#ctx_particion|org.eventb.core.axiom#_nzjUwjNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="v" org.eventb.core.predicate="t∈1 ‥ n → ℤ" org.eventb.core.source="/Tarea2/ctx_particion.buc|org.eventb.core.contextFile#ctx_particion|org.eventb.core.axiom#_nzj70DNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="i" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="neg" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="pos" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="t1" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="t2" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="inv11/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t1)⇒t1∈ℤ ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsjNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsjNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="inv12/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particioy"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t2)⇒t2∈ℤ ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IszNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IszNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particioy"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26ljNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26ljNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0+0=0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℤ))∈1 ‥ n ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℤ))∈1 ‥ n ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hojNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hojNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=0⇒dom(∅ ⦂ ℙ(ℤ×ℤ))=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hozNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hozNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&gt;0⇒dom(∅ ⦂ ℙ(ℤ×ℤ))=1 ‥ 0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hpDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hpDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=0⇒dom(∅ ⦂ ℙ(ℤ×ℤ))=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD8"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&gt;0⇒dom(∅ ⦂ ℙ(ℤ×ℤ))=1 ‥ 0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(∅ ⦂ ℙ(ℤ×ℤ))⇒(∅ ⦂ ℙ(ℤ×ℤ))(k)≥0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsjNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsjNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particioy|org.eventb.core.poPredicate#PRD10"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(∅ ⦂ ℙ(ℤ×ℤ))⇒(∅ ⦂ ℙ(ℤ×ℤ))(k)&lt;0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IszNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_uYLfYDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IszNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#INITIALISATION\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTctx_particio|" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poIdentifier name="neg'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="t2'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="t1'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="pos'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="i'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPctx_particio|" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTIDENTctx_particio\|" org.eventb.core.poStamp="2"/>
+    <org.eventb.core.poSequent name="guardar_no_negativo/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTHYPctx_particio}'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1∈dom(t)∧t∈ℤ ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw|org.eventb.core.guard#_pW594DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw|org.eventb.core.guard#_pW594DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTHYPctx_particio}'"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_no_negativo\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos+1∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_no_negativo\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(pos+1)+neg=i+1" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_no_negativo\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="t1∪{pos+1 ↦ t(i+1)}∈1 ‥ n ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_no_negativo\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos+1=0⇒dom(t1∪{pos+1 ↦ t(i+1)})=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hozNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hozNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_no_negativo\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos+1&gt;0⇒dom(t1∪{pos+1 ↦ t(i+1)})=1 ‥ pos+1" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hpDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hpDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_no_negativo\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t1∪{pos+1 ↦ t(i+1)})⇒(t1∪{pos+1 ↦ t(i+1)})(k)≥0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsjNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsjNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_no_negativo\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particioy|org.eventb.core.poPredicate#PRD10"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_no_negativo/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1∈dom(t)∧t∈ℤ ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw|org.eventb.core.action#_pW594TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw|org.eventb.core.action#_pW594TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio}"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTctx_particio}" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="t1'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="pos'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="i'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPctx_particio}'" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTIDENTctx_particio}" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="i&lt;n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw|org.eventb.core.guard#_pW5W1jNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPctx_particio}" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTHYPctx_particio}'" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="t(i+1)≥0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW5W1TNTEfGgR688KObguw|org.eventb.core.guard#_pW594DNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="guardar_negativo/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTHYPctx_particio~'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1∈dom(t)∧t∈ℤ ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw|org.eventb.core.guard#_pW6k8TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw|org.eventb.core.guard#_pW6k8TNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTHYPctx_particio~'"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_negativo\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="neg+1∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26ljNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26ljNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_negativo\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos+(neg+1)=i+1" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_negativo\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="t2∪{neg+1 ↦ t(i+1)}∈1 ‥ n ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hojNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hojNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_negativo\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="neg+1=0⇒dom(t2∪{neg+1 ↦ t(i+1)})=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsDNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_negativo\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD8"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="neg+1&gt;0⇒dom(t2∪{neg+1 ↦ t(i+1)})=1 ‥ neg+1" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsTNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_negativo\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t2∪{neg+1 ↦ t(i+1)})⇒(t2∪{neg+1 ↦ t(i+1)})(k)&lt;0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IszNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IszNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poSequent#guardar_negativo\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="guardar_negativo/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1∈dom(t)∧t∈ℤ ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw|org.eventb.core.action#_pW6k8jNTEfGgR688KObguw"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw|org.eventb.core.action#_pW6k8jNTEfGgR688KObguw"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTALLHYPctx_particio~"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTctx_particio~" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="neg'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="t2'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="i'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPctx_particio~'" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTIDENTctx_particio~" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="i&lt;n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw|org.eventb.core.guard#_pW6k8DNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPctx_particio~" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#EVTHYPctx_particio~'" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="t(i+1)&lt;0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.event#_pW595DNTEfGgR688KObguw|org.eventb.core.guard#_pW6k8TNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPctx_particiox" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="i∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lDNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pos∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26lTNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="neg∈0 ‥ n" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW26ljNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="pos+neg=i" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoDNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="t1∈1 ‥ n ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hoTNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="t2∈1 ‥ n ⇸ ℤ" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hojNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="pos=0⇒dom(t1)=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hozNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="pos&gt;0⇒dom(t1)=1 ‥ pos" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW3hpDNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="neg=0⇒dom(t2)=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsDNTEfGgR688KObguw"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="neg&gt;0⇒dom(t2)=1 ‥ neg" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsTNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPctx_particioy" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particiox" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t1)⇒t1(k)≥0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IsjNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Tarea2/maq_particion.bpo|org.eventb.core.poFile#maq_particion|org.eventb.core.poPredicateSet#HYPctx_particioy" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t2)⇒t2(k)&lt;0" org.eventb.core.source="/Tarea2/maq_particion.bum|org.eventb.core.machineFile#maq_particion|org.eventb.core.invariant#_pW4IszNTEfGgR688KObguw"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
